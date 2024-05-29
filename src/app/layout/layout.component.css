@@ -1,0 +1,17 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    /* Adjust width as needed */
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.content {
+    flex: 1;
+    /* Content takes remaining space */
+    padding: 20px;
+}

@@ -1,0 +1,15 @@
+<div style="display: flex;width: 100%;height: 100%; flex-direction: column;">
+    <div style="width:400px; margin: 0 auto; text-align: center;">
+        <h2>Accounts page</h2>
+    </div>
+
+    <div style="width:400px; margin: 0 auto; text-align: center;">
+        <span>This is only visible to logged in users.</span>
+    </div>
+
+    <div style="width:400px;  text-align: center; margin: 2rem auto;">
+        <button mat-raised-button color="primary" [type]="'submit'" (click)="fetchAccounts()">
+            <span>Fetch Accounts</span>
+        </button>
+    </div>
+</div>

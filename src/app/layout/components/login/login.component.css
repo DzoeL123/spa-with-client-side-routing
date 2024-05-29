@@ -1,0 +1,32 @@
+.login-card {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login-card-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    mat-error {
+        margin-bottom: 1rem;
+    }
+}
+
+.login-button-content {
+    /* height: 39px; */
+    text-align: center;
+
+    mat-spinner {
+        display: inline-flex;
+        vertical-align: sub;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="sidebar">
+    <ul class="sidebar-menu">
+        <li class="sidebar-menu-item" *ngFor="let menuItem of menuList" [routerLink]="menuItem.link">
+            <span *ngIf="display(menuItem)"
+                [ngStyle]="{'opacity': !isAccessible(menuItem) ? '0.3': '1'}">{{menuItem.name}}</span>
+        </li>
+    </ul>
+
+    <div class="sidebar-footer">
+        <a *ngIf="isUserActive" mat-button color="primary" type="submit" (click)="logout()">Log Out</a>
+        <a *ngIf="!isUserActive" mat-button color="primary" type="submit" (click)="navigateToLogin()">Log In</a>
+
+    </div>
+</div>
